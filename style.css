@@ -1,0 +1,14 @@
+body {
+    background-color: lightgrey;
+}
+
+#clock {
+    top: 4rem;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: green;
+    border-width: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
