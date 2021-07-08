@@ -33,19 +33,14 @@ function paintClock(cvs, opt) { // function that draws a clock on canvas cvs wit
     day = d.getDay();
     date = d.getDate();
     
-    // console.log(day, date);
-    
     // Set Day and Date
     document.getElementById('day-date').innerHTML = weekDays[day] + ' ' + date;
-
-    // console.log(disDay);
 
     // Hands Style
     c.clearRect(-size, -size, cvs.width, cvs.width); // reset clock hands prior to redrawing
     c.fillStyle = opt.color; // set the colour and transparency of the hands
     c.strokeStyle = opt.color;
     c.lineCap = "round"; // the end of the hands should be round
-
     
     // Hour Hand
     c.beginPath();
