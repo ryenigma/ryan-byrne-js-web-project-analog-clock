@@ -6,9 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Analog Clock</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="#">
 </head>
 <body>
-    <canvas id='clock' height='300px' width='300px'></canvas>
+
+    <div id='clock'>
+        <!--Canvas definition-->
+        <canvas id='clock-face' height='300px' width='300px' color='red'></canvas>
+
+        <!--Date Window-->
+        <div id='card'>
+            <span id='day-date'></span>
+        </div>
+    </div>
+
+    <!--Custom JS-->
     <script src='main.js'></script>
 </body>
 </html>
